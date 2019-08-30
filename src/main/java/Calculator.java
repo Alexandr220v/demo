@@ -1,6 +1,4 @@
-import java.util.List;
-
-public class Demo {
+public class Calculator {
 
 
     public int calculateSumOfIntegers(int a, int b) {
@@ -15,10 +13,17 @@ public class Demo {
 
     }
 
+     public int calculateMultiplyOfIntegers(int a, int b) {
+
+        return a * b;
+
+    }
+
     public static void main(String[] args) {
-        Demo demo = new Demo();
+        Calculator demo = new Calculator();
         int diff = demo.calculateDiffOfIntegers(4,5);
-        System.out.println(diff);
+        int multipy = demo.calculateMultiplyOfIntegers(1,2);
+        System.out.println(multipy);
 
     }
 }
